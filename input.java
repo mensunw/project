@@ -6,6 +6,10 @@ public class input {
     public static int money;
     public static boolean benjy;
     public static boolean sell_knowledge;
+    public static boolean first_farm_discount_knowledge;
+
+    //hashmap for each tower: int[], quantity & sell value
+    //need cap for certain towers in case no water / no space
 
     //reads user input and sets global variables
     public static void read(){
