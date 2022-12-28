@@ -12,6 +12,10 @@ public class banana{
 
         System.out.println(input.farm_round_start);
         //Calculate using input
+
+        //System.out.println(calculations.calculate());
+        //testing money function
+        
         
     }
 }
