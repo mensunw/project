@@ -6,6 +6,8 @@ public class input {
     public static boolean benjy = false;
     public static boolean sell_knowledge = true;
     public static boolean first_farm_discount_knowledge = true;
+    public static boolean starting_cash_research = false;
+    public static boolean flat_pack_research = true;
 
     //hashmap for each tower: int[], quantity & sell value <- using list of tower objects instead
     //dont need cap for towers, not accounting for little space or water
@@ -17,9 +19,11 @@ public class input {
         System.out.println("Enter the round to start farming: "); //round 1 or 3
 
         //farm_round_start = scanner.nextInt();
+        farm_round_start = 4;
         
         System.out.println("Enter the round to end farming: ");
-        farm_round_end = scanner.nextInt();
+        //farm_round_end = scanner.nextInt();
+        farm_round_end = 10;
 
 
 
