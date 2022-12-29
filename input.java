@@ -3,6 +3,7 @@ public class input {
     //globals
     public static int farm_round_start;
     public static int farm_round_end;
+    public static int difficulty;
     public static boolean benjy = false;
     public static boolean sell_knowledge = true;
     public static boolean first_farm_discount_knowledge = true;
@@ -24,6 +25,10 @@ public class input {
         System.out.println("Enter the round to end farming: ");
         //farm_round_end = scanner.nextInt();
         farm_round_end = 10;
+
+        System.out.println("Enter difficulty (1 - 3): ");
+        difficulty = 1;
+
 
 
 
