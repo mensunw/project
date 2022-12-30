@@ -16,7 +16,9 @@ public class banana{
         //testing money function
 
         Tower test = new Tower("farm", 1040);
-        System.out.println(test.sellValue);
+        test.setUpgrade(22);
+        System.out.println(test.UPGRADE2_2);
+        System.out.println(test.income);
 
         
     }

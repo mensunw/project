@@ -41,39 +41,87 @@ public class Tower {
 
     //setters for farm upgrades
     //11 = UPGRADE1_1
-    public void setUpgrades(int upgrade){
+    public void setUpgrade(int upgrade){
+        double difficulty_multiplier;
+        if(input.difficulty == 1){
+            difficulty_multiplier = easy;
+        } else if(input.difficulty == 2){
+            difficulty_multiplier = medium;
+        } else if(input.difficulty == 3){
+            difficulty_multiplier = hard;
+        } else {
+            System.out.println("Difficulty error");
+        } 
         switch(upgrade){
             case(11):
                 UPGRADE1_1 = true;
-                //increase sell value, increase income
-                
+                //update cost and increase sell value, increase income
+                cost += 425;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += 40;
                 break;
             case(12):
                 UPGRADE1_2 = true;
+                cost += 510;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += 40;
                 break;
             case(13):
                 UPGRADE1_3 = true;
+                cost += 2550;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += 160;
                 break;
             case(21):
                 UPGRADE2_1 = true;
+                cost += 255;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += 0;
                 break;
             case(22):
                 UPGRADE2_2 = true;
+                cost += 680;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income *= 1.30; //rounds down anyways
                 break;
             case(23):
                 UPGRADE2_3 = true;
+                cost += 2975;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += -1000;
+                //bank will have different mechanic
                 break;
             case(31):
                 UPGRADE3_1 = true;
+                
                 break;
             case(32):
                 UPGRADE3_2 = true;
+                cost += 210;
+                sellValue = (int)Math.ceil((0.77)*cost);
+                income += 0;
                 break;
             case(33):
                 UPGRADE3_3 = true;
+                cost += 170;
+                sellValue = (int)Math.ceil((0.87)*cost);
+                income += 0;
                 break;
-        } 
-    } 
+            default: 
+                System.out.println("Upgrade error");
+                break;
+        }
+    }
+
+    //finds out if the farm combination is valid
+    public boolean isValidFarm(){
+        //check if 2 out of 3 rows, 
+        //then check if in order, 
+        //then check if there is one > 3, other must be <=2 
+        return true;
+    }
+        
+    
 
 
 

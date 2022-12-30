@@ -9,6 +9,7 @@ public class input {
     public static boolean first_farm_discount_knowledge = true;
     public static boolean starting_cash_research = false;
     public static boolean flat_pack_research = true;
+    public static boolean valuable_banana_research = true;
 
     //hashmap for each tower: int[], quantity & sell value <- using list of tower objects instead
     //dont need cap for towers, not accounting for little space or water
