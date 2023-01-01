@@ -20,6 +20,7 @@ public class banana{
         System.out.println(test.UPGRADE2_2);
         System.out.println(test.income);
 
+
         
     }
 }

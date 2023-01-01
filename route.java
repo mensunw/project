@@ -31,7 +31,7 @@ public class route {
 
     }
 
-    //finds out if tower combination is possible (upgrade wise)
+    //finds out if tower combination is possible (upgrade wise), dont need, will make tower function for it
     public boolean isPossibleTowerCombination(){
         return true;
     }

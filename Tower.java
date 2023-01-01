@@ -42,13 +42,16 @@ public class Tower {
     //setters for farm upgrades
     //11 = UPGRADE1_1
     public void setUpgrade(int upgrade){
-        double difficulty_multiplier;
+        double difficulty_multiplier = 1;
         if(input.difficulty == 1){
-            difficulty_multiplier = easy;
+            difficulty_multiplier *= easy;
         } else if(input.difficulty == 2){
-            difficulty_multiplier = medium;
+            difficulty_multiplier *= easy;
+            difficulty_multiplier *= medium;
         } else if(input.difficulty == 3){
-            difficulty_multiplier = hard;
+            difficulty_multiplier *= easy;
+            difficulty_multiplier *= medium;
+            difficulty_multiplier *= hard;
         } else {
             System.out.println("Difficulty error");
         } 

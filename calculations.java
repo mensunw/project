@@ -9,8 +9,15 @@ public class calculations {
     public static Tower[] calculate(){
         //calculates every combination of givenTowers (recursion) and returns the best combination of towers[]
         Tower[] t = new Tower[1];
+        //loop
+        //find every combination
+        //for each combination: calculate money from it
+
+
+
         return t;
     }
+
 
     //use the global variable farm_round_end
     public int money_from_route(Tower givenTowers[]){
