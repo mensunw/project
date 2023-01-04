@@ -27,13 +27,11 @@ public class Tower {
     public boolean UPGRADE3_2 = false;
     public boolean UPGRADE3_3 = false;
 
-    public String name;
     public int cost;
     public int sellValue;
     public int income;
 
-    public Tower(String name, int cost){
-        this.name = name;
+    public Tower(int cost){
         this.cost = cost;
         sellValue = (int)Math.ceil((0.77)*cost); //many more factors, keeping simple for now. always rounds up.
         income = 80; //defualt income
