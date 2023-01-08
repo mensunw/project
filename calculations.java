@@ -41,18 +41,32 @@ public class calculations {
         return m;
     }
 
-    public static void combination_helper(ArrayList<ArrayList<Integer>> combinations, int farms, int index){
+    public static void combination_helper(ArrayList<ArrayList<Integer>> combinations, int currentFarms, int currentIndex){
         //base case based on farms. each recursive call "adds a for loop ontop or below the other farm"
         //update index each call
         //
         //for each farm, find every combination possible within it (use combation_upgrades & is_valid)
         //
         //in this case, farms = number of for loops needed
-        if(index > farms){
+
+        //make base case based on number of combinations, not farms. farms argument should be part of recursive part
+        if(currentIndex > 10){
             return;
         } else {
-            combination_helper(combinations, farms, index+1);
+            //make each call a possibility
+           
             //now how can we get all the combinations?
+            //every combination must be some sort of instruction to keep track of the route
+
+            //if no farms, then create a farm
+
+
+            //for now dont check valid upgrade for crosspaths. check for selling later
+            //first row upgrade 
+            //2nd row upgrade
+            //3rd row upgrade
+            //new farm
+
         }
         
         
