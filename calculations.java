@@ -41,7 +41,7 @@ public class calculations {
         return m;
     }
 
-    public static void combination_helper(ArrayList<ArrayList<Integer>> combinations, int currentFarms, int currentIndex){
+    public static void combination_helper(ArrayList<ArrayList<Object>> combinations, int currentFarms, int currentIndex){
         //base case based on farms. each recursive call "adds a for loop ontop or below the other farm"
         //update index each call
         //
@@ -50,7 +50,8 @@ public class calculations {
         //in this case, farms = number of for loops needed
 
         //make base case based on number of combinations, not farms. farms argument should be part of recursive part
-        if(currentIndex > 10){
+        //base case should be based off of number of farms though, cant manually put in combinations
+        if(currentFarms > 10){
             return;
         } else {
             //make each call a possibility
@@ -59,6 +60,9 @@ public class calculations {
             //every combination must be some sort of instruction to keep track of the route
 
             //if no farms, then create a farm
+            if(currentFarms == 0){
+
+            }
 
 
             //for now dont check valid upgrade for crosspaths. check for selling later
